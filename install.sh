@@ -114,8 +114,10 @@ cat << EOF >> /tmp/smb.conf
   browseable = yes
   create mask = 0644
   directory mask = 0755
-  valid users = $user1,$user2
-  write list = $user1
+  force group = media
+  force user = media
+  valid users = $user1,$user2,media
+  write list = $user1,media
   posix locking = no
   strict locking = no
   oplocks = no
