@@ -148,6 +148,8 @@ cat << EOF >> /tmp/smb.conf
   public = no
   read only = no
   valid users = $user1
+  force user = root
+  force group = root
   browseable = yes
   write list = $user1
   create mask = 0600
