@@ -15,7 +15,7 @@ path5=${11}
 path6=${12}
 path7=${13}
 path8=${14}
-cat << EOF >> /tmp/smb.conf
+cat << EOF > /tmp/smb.conf
 [global]
 #General
   workgroup = $workgroup
